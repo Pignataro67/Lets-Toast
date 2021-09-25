@@ -25,3 +25,11 @@ function createNotification(message = null, type = null) {
       notif.remove()
   }, 3000)
 }
+
+function getRandomMessage() {
+  return messages[Math.floor(Math.random() * messages.length)]
+}
+
+function getRandomType() {
+  return types[Math.floor(Math.random() * types.length)]
+}
